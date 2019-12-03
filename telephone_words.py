@@ -80,10 +80,10 @@ def telephone_words(digits):
                     for o in digits_to_letters[int(digits[3])]:
                         # concatonate the letters together and add them to the perms list
                         perms.append(l + m + n + o)
-    ​
+
     # return perms list
     return perms
-​
+
 
 
 print(telephone_words('2347'))
