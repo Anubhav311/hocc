@@ -26,22 +26,6 @@ Sample Input--
 Sample Output--
 4
 
-Explanation 0:--
-Emma must avoid  and . She can win the game with a minimum of  jumps:
-
-jump(2).png
-
-Sample Input 1
-
-6
-0 0 0 0 1 0
-Sample Output 1
-
-3
-Explanation 1:
-The only thundercloud to avoid is . Emma can win the game in  jumps:
-
-jump(5).png
 */
 
 
