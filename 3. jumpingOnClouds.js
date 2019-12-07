@@ -117,3 +117,29 @@ function jumpingOnClouds(c) {
         jumps++;
     }
 }
+
+
+
+// def jumpingOnClouds(c):
+//     # set the current cloud and the number of jumps both to zero
+//     current_cloud = 0
+//     number_of_jumps = 0
+// ​
+//     # while the current cloud is less than the length of c minus one
+//     while current_cloud < len(c) - 1:
+//         # if the current cloud + 2 is less than the length of c
+//         # and c at the index of current cloud + 2 is not equal to 1
+//         if current_cloud + 2 < len(c) and c[current_cloud + 2] != 1:
+//             # increment the jumps by 1
+//             number_of_jumps += 1
+//             # increment the cloud by 2
+//             current_cloud += 2
+//         # otherwise
+//         else:
+//             # increment jumps by one
+//             number_of_jumps += 1
+//             # increment cloud by one
+//             current_cloud += 1
+// ​
+//     # return number of jumps
+//     return number_of_jumps
