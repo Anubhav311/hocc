@@ -44,3 +44,40 @@ The only thundercloud to avoid is . Emma can win the game in  jumps:
 
 jump(5).png
 */
+
+function jumpingOnClouds(c) {
+    // counting steps
+    let count = 0;
+    // keep check of index
+    let index = 0;
+    // while the string has data in it
+    while (true) {
+        // check if the index is equal or greater
+        // than the length of the number of elements - 1
+        if (index >= c.length - 1) {
+            // return count
+            return count;
+        }
+        // if the index +1 = the len of the arr - 1
+        if (index + 1 == c.length - 1) {
+            // increment count by 1
+            count++;
+            // return count
+            return count;
+        }
+        // if c index + 1 = 0 and c index + 2 = 1
+        if (c[index + 1] == 0 && c[index + 2] == 1) {
+            // increase count by 1
+            count++;
+            // increase index by 1
+            index++;
+        }
+        // else if c at index + 2 = 0
+        else if (c[index + 2] == 0) {
+            // increase index by 2
+            index += 2;
+            // increase count by 1
+            count++;
+        }
+    }​
+}
