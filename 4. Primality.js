@@ -50,24 +50,53 @@ is only divisible  and itself, so we print Prime on a new line.
 // return "Prime"
 ​
 // Times Complexity O(n)
+// function primality(n) {
+//     // test a base case where n == 1 // O(1)
+//     if (n == 1) {
+//         // return "Not prime" // O(1)
+//         return "Not prime";
+//     }
+// ​
+//     // iterate over 2 to n / 2 O((n / 2) - 1) => O(n)
+//     for (let i = 2; i <= n / 2; i++) {
+//         // test if the mod of n and i are equal to zero
+//         if (n % i == 0) { // O(1)
+//             // if so it is not a prime (return "Not prime")
+//             return "Not prime"; // O(1)
+//         }
+//     }
+// ​
+//     // if we reach the end of the itterations return "Prime"
+//     return "Prime"; // O(1)
+// }
+// ​
+
+
+​
+// can we then optimize this runtime to O(sqrt(n))??​
+// import math lib
+​
+// O(sqrt(n)) Time Complexity
+// O(1) Space Complexity
+​
 function primality(n) {
-    // test a base case where n == 1 // O(1)
-    if (n == 1) {
-        // return "Not prime" // O(1)
-        return "Not prime";
+    // base case of if n is less than 2
+    if (n < 2) { // O(1)
+        // return "Not prime"
+        return "Not prime"; // O(1)
     }
 ​
-    // iterate over 2 to n / 2 O((n / 2) - 1) => O(n)
-    for (let i = 2; i <= n / 2; i++) {
-        // test if the mod of n and i are equal to zero
-        if (n % i == 0) { // O(1)
-            // if so it is not a prime (return "Not prime")
-            return "Not prime"; // O(1)
+    // iterate over the problem set using Math.sqrt wheve n starts at 2
+    // and end at the sqrt(n)
+    for (let i = 2; i <= Math.sqrt(n); i++) { // O(sqrt(n))
+​
+        // test if mod of n and i are equal to zero
+        if (n % i == 0) { // O(1 * n) => O(1)
+            // return "Not prime"
+            return "Not prime"; // O(1 * n) O(1)
         }
     }
 ​
-    // if we reach the end of the itterations return "Prime"
+    // if it falls past the iteration we must return "Prime"
     return "Prime"; // O(1)
 }
-​
-​
