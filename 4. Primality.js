@@ -38,3 +38,36 @@ is only divisible  and itself, so we print Prime on a new line.
 is only divisible  and itself, so we print Prime on a new line.
 
 */
+
+
+// lets start with a naieve approach O(n / 2) => O(n)?
+// a simple solution
+// if n <= 1
+//   return "Not prime"
+// maxDivisor = n // 2for i = 2; i <= maxDivisor; i++
+//   if n % i == 0
+//     return "Not prime"
+// return "Prime"
+​
+// Times Complexity O(n)
+function primality(n) {
+    // test a base case where n == 1 // O(1)
+    if (n == 1) {
+        // return "Not prime" // O(1)
+        return "Not prime";
+    }
+​
+    // iterate over 2 to n / 2 O((n / 2) - 1) => O(n)
+    for (let i = 2; i <= n / 2; i++) {
+        // test if the mod of n and i are equal to zero
+        if (n % i == 0) { // O(1)
+            // if so it is not a prime (return "Not prime")
+            return "Not prime"; // O(1)
+        }
+    }
+​
+    // if we reach the end of the itterations return "Prime"
+    return "Prime"; // O(1)
+}
+​
+​
