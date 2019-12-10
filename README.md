@@ -9,3 +9,4 @@ Repository of all problems that I have practiced as part of HOCC (Hour of Code C
 3. jumping on clouds
 4. primality
 5. mark and toys
+6. pairs
