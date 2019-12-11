@@ -58,10 +58,10 @@ Let's calculate the number of ways of climbing the first two of the Davis' s = 3
 1. The first staircase only has n = 1 step, so there is only one way for him to climb it (i.e., by jumping 1 step). Thus, we print 1 on a new line.
 
 2. The second staircase has n = 3 steps and he can climb it in any of the four following ways:
-Thus, we print  on a new line.
-    1. 1 -> 1 -> 1
-    2. 1 -> 2
-    3. 2 -> 1
-    4. 3
+1. 1 -> 1 -> 1
+2. 1 -> 2
+3. 2 -> 1
+4. 3
 
+Thus, we print 4 on a new line.
 */
