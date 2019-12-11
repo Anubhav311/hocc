@@ -1,4 +1,4 @@
-/*
+'''
 You will be given an array of integers and a target value. Determine the number of pairs of array elements that have a difference equal to a target value.
 
 For example, given an array of [1, 2, 3, 4] and a target value of 1, we have three values meeting the condition: , , and .
@@ -33,4 +33,31 @@ Sample Output
 Explanation
 
 There are 3 pairs of integers in the set with a difference of 2: [5,3], [4,2] and [3,1] .
-*/
+'''
+
+def pairs(k, arr):
+    # set count to zero
+    count = 0
+​
+    # dictionary comprehension for the hash table
+    d = {n:1 for n in arr}
+​
+    # iterate over the arr
+    for n in arr:
+​
+        # if n - k in the keys of out dictionary
+        if n - k in d.keys():
+​
+            # increment count
+            count += 1
+    # return count
+    return count
+​
+arr = []
+for i in range(200000):
+    arr.append(i * 12)
+print("Ready")
+# arr = [1, 5, 3, 4, 2]
+k = 120
+​
+print(pairs(k, arr)) # => 3
