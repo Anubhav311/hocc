@@ -10,3 +10,4 @@ Repository of all problems that I have practiced as part of HOCC (Hour of Code C
 4. primality
 5. mark and toys
 6. pairs
+7. Davis staircase
