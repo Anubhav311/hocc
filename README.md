@@ -11,3 +11,4 @@ Repository of all problems that I have practiced as part of HOCC (Hour of Code C
 5. mark and toys
 6. pairs
 7. Davis staircase
+8. Truck tour
